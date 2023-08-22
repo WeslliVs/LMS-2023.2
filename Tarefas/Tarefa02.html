@@ -4,21 +4,87 @@
 <head>
   <title>HTML Básico</title>
   <style>
-    table,
+    /* Estilos gerais para centralizar e formatar o conteúdo */
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos da tabela */
+    table {
+      border-collapse: collapse;
+      margin: 20px auto;
+      /* Centraliza a tabela */
+      border: 1px solid black;
+      width: 70%;
+    }
+
     th,
     td {
       border: 1px solid black;
-      border-collapse: collapse;
       padding: 8px;
-      text-align: center;
     }
 
     th {
       background-color: #dcfaff;
     }
+
+    /* Estilos para os links */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #007bff;
+      /* Cor do link */
+    }
+
+    /* Estilos para o formulário */
+    form {
+      margin: 20px auto;
+      width: 60%;
+      text-align: left;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .choice-group {
+      display: flex;
+      gap: 1px;
+      align-items: center;
+      margin-top: 5px;
+      /* Ajuste a margem conforme necessário */
+    }
   </style>
 </head>
-<!-- Formatação da tabela, alterações do alinhamento do texto, bordas e cores. -->
 
 <body>
   <header>
@@ -28,25 +94,17 @@
   <main>
     <section>
       <ul>
-        <li>
-          <a
-            href="https://www.codecademy.com/enrolled/courses/learn-html">https://www.codecademy.com/enrolled/courses/learn-html</a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/watch?v=3i0wV2igmqQ">https://www.youtube.com/watch?v=3i0wV2igmqQ</a>
-        </li>
-        <li>
-          <a href="https://www.codecademy.com/catalog/language/html-css"><img
-              src="https://images.codecademy.com/social/logo-codecademy-social.png" width="30%" height="30%" /></a>
-        </li>
+        <li><a href="https://www.codecademy.com/enrolled/courses/learn-html">Curso HTML</a></li>
+        <li><a href="https://www.youtube.com/watch?v=3i0wV2igmqQ">Vídeo Tutorial</a></li>
+        <li><a href="https://www.codecademy.com/catalog/language/html-css"><img
+              src="https://images.codecademy.com/social/logo-codecademy-social.png" width="30%" height="30%" /></a></li>
       </ul>
     </section>
-    <!-- Lista com 3 links diferentes, onde o último link está inserido na imagem. -->
 
     <hr />
 
     <section>
-      <h4>Porcentagens de sites que usam várias subcategorias de HTML</h4>
+      <h2>Porcentagens de uso de subcategorias de HTML</h2>
       <table>
         <thead>
           <tr>
@@ -78,44 +136,37 @@
           </tr>
         </tbody>
       </table>
-      <!-- Tabela exibindo informações sobre porcentagem de uso de diferentes tipos de HTML.-->
 
       <p>
-        <strong>Fontes: </strong>
+        <strong>Fontes:</strong>
         Categorias e Percentual:
         <a
-          href="https://w3techs.com/technologies/details/ml-html_any#:~:text=HTML%20is%20used%20by%2095.3,whose%20markup%20language%20we%20know.">W3Techs</a>
-        <br />
+          href="https://w3techs.com/technologies/details/ml-html_any#:~:text=HTML%20is%20used%20by%2095.3,whose%20markup%20language%20we%20know.">W3Techs</a><br />
         Ano de Lançamento: <a href="https://chat.openai.com">ChatGPT</a>
       </p>
     </section>
-    <!-- Trecho de código para exibir as fontes de onde a maior parte dos dados da tabela foram retirados.-->
 
     <hr>
 
     <article>
       <form action="https://www.w3schools.com/action_page.php" method="get">
-        <br>
         <section>
           <label for="user">Username:</label>
-          <input id="user" name="user" type="text" value="" maxlength="15">
+          <input id="user" name="user" type="text" maxlength="15">
         </section>
-        <br>
 
         <section>
           <label for="class">Disciplina:</label>
           <input id="class" name="class" type="text" value="Linguagens de Marcação e Script" readonly>
         </section>
-        <br>
 
         <section>
-          <label for="num">Insira um valor entre 25000 e 30000:</label>
+          <label for="num">Valor entre 25000 e 30000:</label>
           <input type="number" id="num" name="number" value="25000" min="25000" max="30000">
         </section>
-        <br>
 
-        <section>
-          <label for="choices">Qual a sua turma?</label>
+        <section class="choice-group">
+          <label>Qual a sua turma?</label>
           <input type="radio" name="turma" id="t01" value="t01">
           <label for="t01">T01 - Manhã</label>
           <input type="radio" name="turma" id="t02" value="t02">
@@ -123,8 +174,8 @@
         </section>
         <br>
 
-        <section>
-          <label for="languages">Em quais linguagens você possui conhecimento?</label>
+        <section class="choice-group">
+          <label>Linguagens que você conhece:</label>
           <input type="checkbox" name="language" id="html" value="html">
           <label for="html">HTML</label>
           <input type="checkbox" name="language" id="css" value="css">
@@ -132,14 +183,10 @@
           <input type="checkbox" name="language" id="js" value="js">
           <label for="js">JavaScript</label>
         </section>
-        <br>
 
         <input type="submit">
       </form>
-
-
     </article>
-
   </main>
 </body>
 
