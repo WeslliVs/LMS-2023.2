@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HTML Básico</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #dcfaff;
+    }
+  </style>
+</head>
+<!-- Formatação da tabela, alterações do alinhamento do texto, bordas e cores. -->
+
+<body>
+  <header>
+    <h1>HTML Básico</h1>
+  </header>
+
+  <main>
+    <section>
+      <ul>
+        <li>
+          <a
+            href="https://www.codecademy.com/enrolled/courses/learn-html">https://www.codecademy.com/enrolled/courses/learn-html</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=3i0wV2igmqQ">https://www.youtube.com/watch?v=3i0wV2igmqQ</a>
+        </li>
+        <li>
+          <a href="https://www.codecademy.com/catalog/language/html-css"><img
+              src="https://images.codecademy.com/social/logo-codecademy-social.png" width="30%" height="30%" /></a>
+        </li>
+      </ul>
+    </section>
+    <!-- Lista com 3 links diferentes, onde o último link está inserido na imagem. -->
+
+    <hr />
+
+    <section>
+      <h4>Porcentagens de sites que usam várias subcategorias de HTML</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Subcategorias</th>
+            <th>Uso Percentual</th>
+            <th>Ano de Lançamento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>HTML5</strong></td>
+            <td><strong>96.6%</strong></td>
+            <td><strong>2014</strong></td>
+          </tr>
+          <tr>
+            <td>HTML Transitional</td>
+            <td>4.6%</td>
+            <td>1999</td>
+          </tr>
+          <tr>
+            <td>AMP</td>
+            <td>0.2%</td>
+            <td>2015</td>
+          </tr>
+          <tr>
+            <td>HTML Strict</td>
+            <td>0.2%</td>
+            <td>1997</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Tabela exibindo informações sobre porcentagem de uso de diferentes tipos de HTML.-->
+
+      <p>
+        <strong>Fontes: </strong>
+        Categorias e Percentual:
+        <a
+          href="https://w3techs.com/technologies/details/ml-html_any#:~:text=HTML%20is%20used%20by%2095.3,whose%20markup%20language%20we%20know.">W3Techs</a>
+        <br />
+        Ano de Lançamento: <a href="https://chat.openai.com">ChatGPT</a>
+      </p>
+    </section>
+    <!-- Trecho de código para exibir as fontes de onde a maior parte dos dados da tabela foram retirados.-->
+
+    <hr>
+
+    <article>
+      <form action="https://www.w3schools.com/action_page.php" method="get">
+        <br>
+        <section>
+          <label for="user">Username:</label>
+          <input id="user" name="user" type="text" value="" maxlength="15">
+        </section>
+        <br>
+
+        <section>
+          <label for="class">Disciplina:</label>
+          <input id="class" name="class" type="text" value="Linguagens de Marcação e Script" readonly>
+        </section>
+        <br>
+
+        <section>
+          <label for="num">Insira um valor entre 25000 e 30000:</label>
+          <input type="number" id="num" name="number" value="25000" min="25000" max="30000">
+        </section>
+        <br>
+
+        <section>
+          <label for="choices">Qual a sua turma?</label>
+          <input type="radio" name="turma" id="t01" value="t01">
+          <label for="t01">T01 - Manhã</label>
+          <input type="radio" name="turma" id="t02" value="t02">
+          <label for="t02">T02 - Tarde</label>
+        </section>
+        <br>
+
+        <section>
+          <label for="languages">Em quais linguagens você possui conhecimento?</label>
+          <input type="checkbox" name="language" id="html" value="html">
+          <label for="html">HTML</label>
+          <input type="checkbox" name="language" id="css" value="css">
+          <label for="css">CSS</label>
+          <input type="checkbox" name="language" id="js" value="js">
+          <label for="js">JavaScript</label>
+        </section>
+        <br>
+
+        <input type="submit">
+      </form>
+
+
+    </article>
+
+  </main>
+</body>
+
+</html>
