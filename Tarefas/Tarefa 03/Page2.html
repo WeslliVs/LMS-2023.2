@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página 2</title>
+  <style>
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 25%;
+      height: 100%;
+      background-color: #00aab6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .sidebar-button {
+      background-color: #181818;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+
+    .sidebar-button:hover {
+      background-color: #a70000;
+    }
+
+    .content {
+      margin-left: 400px;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <button class="sidebar-button">Botão 1</button>
+    <button class="sidebar-button">Botão 2</button>
+    <button class="sidebar-button">Botão 3</button>
+  </div>
+
+  <div class="content">
+    <article>
+      <h2>Título do Artigo 1</h2>
+      <p>Este é o conteúdo do primeiro artigo.</p>
+    </article>
+
+    <article>
+      <h2>Título do Artigo 2</h2>
+      <p>Este é o conteúdo do segundo artigo.</p>
+    </article>
+  </div>
+</body>
+
+</html>

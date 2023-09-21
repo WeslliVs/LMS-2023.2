@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade T03</title>
+    <style>
+      article {
+        font-family: Arial, sans-serif;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .content {
+        height: 500px;
+        overflow: auto;
+      }
+
+      .mobile-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .nav-button {
+        background-color: #555;
+        color: white;
+        border: none;
+        padding: 5px 15px;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+
+      .nav-button:hover {
+        background-color: #00aab6;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-button {
+        background-color: #555;
+        color: white;
+        border: none;
+        padding: 5px 15px;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        width: 300px;
+        top: 100%;
+        left: 0;
+        padding: 10px;
+      }
+
+      .dropdown-content .dropdown-button {
+        display: block;
+        background-color: #555;
+        color: white;
+        border: none;
+        margin: 5px 0;
+        padding: 5px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="mobile-navbar">
+      <button class="nav-button">Botão 1</button>
+      <button class="nav-button">Botão 2</button>
+      <div class="dropdown">
+        <button class="dropdown-button">Dropdown</button>
+        <div class="dropdown-content">
+          <button class="dropdown-button">Item 1</button>
+          <button class="dropdown-button">Item 2</button>
+          <button class="dropdown-button">Item 3</button>
+        </div>
+      </div>
+      <button class="nav-button">Botão 4</button>
+    </div>
+    <div class="content">
+      <article>
+        <h2>Título do Artigo 1</h2>
+        <p>Este é o conteúdo do primeiro artigo.</p>
+      </article>
+      <article>
+        <h2>Título do Artigo 2</h2>
+        <p>Este é o conteúdo do segundo artigo.</p>
+      </article>
+    </div>
+  </body>
+</html>
