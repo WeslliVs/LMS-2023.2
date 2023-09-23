@@ -16,10 +16,6 @@
     /* Estilo da barra de navegação superior */
     .navbar {
       background-color: #333;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
       display: flex;
       justify-content: space-between;
     }
@@ -48,13 +44,13 @@
 
     /* Define a estrutura do conteúdo principal */
     .container {
-      margin-top: 70px;
       display: flex;
     }
 
     /* Estilo do menu lateral esquerdo */
     .sidebar-left {
       width: 300px;
+      height: 650px;
       background-color: #68edff;
       padding: 20px;
     }
@@ -70,14 +66,12 @@
     /* Estilo do conteúdo principal */
     .content {
       flex-grow: 1;
-      padding: 20px;
+      width: 30%;
     }
 
     /* Estilo da galeria de imagens */
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 10px;
+      display: block;
     }
 
     /* Estilo das imagens na galeria */
@@ -89,7 +83,8 @@
 
     /* Estilo do menu lateral direito */
     .sidebar-right {
-      width: 300px;
+      width: 10%;
+      height: 650px;
       background-color: #68edff;
       padding: 20px;
     }
@@ -104,7 +99,6 @@
 
     /* Estilo do rodapé */
     .footer {
-      margin-top: 20px;
       text-align: center;
       background-color: #333;
       color: white;
@@ -136,15 +130,15 @@
     <div class="content">
       <!-- Galeria de imagens -->
       <div class="gallery">
-        <img src="Imagens/imagem1.png" alt="Bicicleta do Cristiano Ronaldo">
-        <img src="Imagens/imagem2.png" alt="Cabeçada do Zidane">
-        <img src="Imagens/imagem3.png" alt="Messi e Cristiano Ronaldo">
-        <img src="Imagens/imagem4.png" alt="Seleção 100% Jesus">
-        <img src="Imagens/imagem5.png" alt="Yuri Albero no vôlei">
-        <img src="Imagens/imagem6.png" alt="Ronaldinho 5x4 Neymar">
-        <img src="Imagens/imagem7.png" alt="Neymar domínio acrobático">
-        <img src="Imagens/imagem8.png" alt="Messi super anão driblando">
-        <img src="Imagens/imagem9.png" alt="CR7 anão soltando um canhão">
+        <img style="margin: 10px" src="Imagens/imagem1.png" alt="Bicicleta do Cristiano Ronaldo">
+        <img style="margin: 10px" src="Imagens/imagem2.png" alt="Cabeçada do Zidane">
+        <img style="margin: 10px" src="Imagens/imagem3.png" alt="Messi e Cristiano Ronaldo">
+        <img style="margin: 10px" src="Imagens/imagem4.png" alt="Seleção 100% Jesus">
+        <img style="margin: 10px" src="Imagens/imagem5.png" alt="Yuri Albero no vôlei">
+        <img style="margin: 10px" src="Imagens/imagem6.png" alt="Ronaldinho 5x4 Neymar">
+        <img style="margin: 10px" src="Imagens/imagem7.png" alt="Neymar domínio acrobático">
+        <img style="margin: 10px" src="Imagens/imagem8.png" alt="Messi super anão driblando">
+        <img style="margin: 10px" src="Imagens/imagem9.png" alt="CR7 anão soltando um canhão">
       </div>
     </div>
 
