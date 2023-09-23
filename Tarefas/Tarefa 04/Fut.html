@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minha Página de Futebol</title>
   <style>
+    /* Define o estilo global para o documento */
     body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
     }
 
+    /* Estilo da barra de navegação superior */
     .navbar {
       background-color: #333;
       position: fixed;
@@ -22,6 +24,7 @@
       justify-content: space-between;
     }
 
+    /* Estilo dos botões da barra de navegação */
     .navbar button {
       padding: 10px 20px;
       margin: 5px;
@@ -31,27 +34,32 @@
       cursor: pointer;
     }
 
+    /* Estilo dos links na barra de navegação */
     .navbar a {
       display: block;
       text-decoration: none;
       color: #333;
     }
 
+    /* Efeito de hover nos botões da barra de navegação */
     .navbar button:hover {
       background-color: #68edff;
     }
 
+    /* Define a estrutura do conteúdo principal */
     .container {
       margin-top: 70px;
       display: flex;
     }
 
+    /* Estilo do menu lateral esquerdo */
     .sidebar-left {
       width: 300px;
       background-color: #68edff;
       padding: 20px;
     }
 
+    /* Estilo dos links no menu lateral esquerdo */
     .sidebar-left a {
       display: block;
       margin-bottom: 10px;
@@ -59,29 +67,34 @@
       color: #333;
     }
 
+    /* Estilo do conteúdo principal */
     .content {
       flex-grow: 1;
       padding: 20px;
     }
 
+    /* Estilo da galeria de imagens */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 10px;
     }
 
+    /* Estilo das imagens na galeria */
     .gallery img {
       width: 150px;
       height: 150px;
       object-fit: cover;
     }
 
+    /* Estilo do menu lateral direito */
     .sidebar-right {
       width: 300px;
       background-color: #68edff;
       padding: 20px;
     }
 
+    /* Estilo dos links no menu lateral direito */
     .sidebar-right a {
       display: block;
       margin-bottom: 10px;
@@ -89,6 +102,7 @@
       color: #333;
     }
 
+    /* Estilo do rodapé */
     .footer {
       margin-top: 20px;
       text-align: center;
@@ -100,6 +114,7 @@
 </head>
 
 <body>
+  <!-- Barra de navegação -->
   <div class="navbar">
     <button><a href="https://ge.globo.com">Globo Esporte</a></button>
     <button><a href="https://www.espn.com.br">ESPN</a></button>
@@ -107,7 +122,9 @@
     <button><a href="https://www.sofascore.com/pt/">Sofascore</a></button>
   </div>
 
+  <!-- Conteúdo principal -->
   <div class="container">
+    <!-- Menu lateral esquerdo -->
     <div class="sidebar-left">
       <a href="https://ge.globo.com">Globo Esporte</a>
       <a href="https://www.espn.com.br">ESPN</a>
@@ -115,7 +132,9 @@
       <a href="https://www.sofascore.com/pt/">Sofascore</a>
     </div>
 
+    <!-- Conteúdo central -->
     <div class="content">
+      <!-- Galeria de imagens -->
       <div class="gallery">
         <img src="Imagens/imagem1.png" alt="Bicicleta do Cristiano Ronaldo">
         <img src="Imagens/imagem2.png" alt="Cabeçada do Zidane">
@@ -129,14 +148,17 @@
       </div>
     </div>
 
+    <!-- Menu lateral direito -->
     <div class="sidebar-right">
       <a href="#sidebar-left">Sites de Notícias</a>
       <a href="#gallery">Imagens Esportivas</a>
     </div>
   </div>
 
+  <!-- Rodapé -->
   <div class="footer">
     <p>&copy; 2023 Minha Página de Futebol</p>
+    <p>Bergson Serafim e Weslley Vieira</p>
   </div>
 </body>
 
