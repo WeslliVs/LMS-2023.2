@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página de Futebol</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navbar button {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #ff5353;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .navbar a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .navbar button:hover {
+      background-color: #68edff;
+    }
+
+    .container {
+      margin-top: 70px;
+      display: flex;
+    }
+
+    .sidebar-left {
+      width: 300px;
+      background-color: #68edff;
+      padding: 20px;
+    }
+
+    .sidebar-left a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .sidebar-right {
+      width: 300px;
+      background-color: #68edff;
+      padding: 20px;
+    }
+
+    .sidebar-right a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <button><a href="https://ge.globo.com">Globo Esporte</a></button>
+    <button><a href="https://www.espn.com.br">ESPN</a></button>
+    <button><a href="https://tntsports.com.br">TNT Sports</a></button>
+    <button><a href="https://www.sofascore.com/pt/">Sofascore</a></button>
+  </div>
+
+  <div class="container">
+    <div class="sidebar-left">
+      <a href="https://ge.globo.com">Globo Esporte</a>
+      <a href="https://www.espn.com.br">ESPN</a>
+      <a href="https://tntsports.com.br">TNT Sports</a>
+      <a href="https://www.sofascore.com/pt/">Sofascore</a>
+    </div>
+
+    <div class="content">
+      <div class="gallery">
+        <img src="Imagens/imagem1.png" alt="Bicicleta do Cristiano Ronaldo">
+        <img src="Imagens/imagem2.png" alt="Cabeçada do Zidane">
+        <img src="Imagens/imagem3.png" alt="Messi e Cristiano Ronaldo">
+        <img src="Imagens/imagem4.png" alt="Seleção 100% Jesus">
+        <img src="Imagens/imagem5.png" alt="Yuri Albero no vôlei">
+        <img src="Imagens/imagem6.png" alt="Ronaldinho 5x4 Neymar">
+        <img src="Imagens/imagem7.png" alt="Neymar domínio acrobático">
+        <img src="Imagens/imagem8.png" alt="Messi super anão driblando">
+        <img src="Imagens/imagem9.png" alt="CR7 anão soltando um canhão">
+      </div>
+    </div>
+
+    <div class="sidebar-right">
+      <a href="#sidebar-left">Sites de Notícias</a>
+      <a href="#gallery">Imagens Esportivas</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2023 Minha Página de Futebol</p>
+  </div>
+</body>
+
+</html>
